@@ -26,7 +26,14 @@ Things I would watch for in logfiles
 * secureboot
 * slots on luks? safety one?
 
+*  missing service(s)
+*  ask policies
+*  denials
+*  time since last backup?
+*  
+  
 
+* ? sys-usb - > sys-usb: denied: loopback qrexec connection not supported
 
 
 * A start job for unit qubes-vm@sys-usb.service has begun execution.
@@ -36,5 +43,8 @@ Jun 20 16:57:22 dom0 systemd[1]: qubes-vm@sys-usb.service: Main process exited, 
 ░░ The process' exit code is 'exited' and its exit status is 1.
 Jun 20 16:57:22 dom0 systemd[1]: qubes-vm@sys-usb.service: Failed with result 'exit-code'.
 
+
+what was:
+“qrexec-policy-graph –include-ask”?
 
 
