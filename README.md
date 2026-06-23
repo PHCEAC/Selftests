@@ -36,7 +36,9 @@ Things I would watch for in logfiles
    * guivm
    * video/qva
    * ???
-  
+* shutdown-idle service enabled ?
+* other services?
+* 
 
 * ? sys-usb - > sys-usb: denied: loopback qrexec connection not supported
 
