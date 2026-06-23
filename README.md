@@ -24,6 +24,10 @@ Things I would watch for in logfiles
 * missing qubes services?
 * dispvm cannot start
 * no iommu
+* no vt-d etc
+* xen smt?
+* acpi errors - benign
+* 
 * secureboot
 * slots on luks? safety one?
 
