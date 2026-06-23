@@ -13,7 +13,13 @@ Things I would watch for in logfiles
   * no devices?
   * recent changes?
 *  /var/log/xen/console/guest-sys-usb.log etc
+*  var/log/xen/console/guest-sys-net.log
+   *  maybe also this one: /var/log/xen/console/guest-sys-net-dm.log
+* ? /var/log/xen/console/hypervisor.log
 *  policy: lint
+*  segfaults
+*  panics
+*  BUGs
 *  
 
 * shutdown error
