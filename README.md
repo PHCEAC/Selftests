@@ -12,6 +12,7 @@ Things I would watch for in logfiles
   * no devices?
   * recent changes?
 *  /var/log/xen/console/guest-sys-usb.log etc
+*  policy: lint
 *  
 
 * shutdown error
