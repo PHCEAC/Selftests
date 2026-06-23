@@ -7,6 +7,7 @@ Things I would watch for in logfiles
 * sys-usb startup fail
   * useful msg: add “qubes.skip_autostart” to grub AND  remove rd.qubes_hide_all_usb from grub.
 * other qube startup fail
+* every qube startup fail
 * qrexec timeout
   * has devices?
   * no devices?
@@ -30,7 +31,11 @@ Things I would watch for in logfiles
 *  ask policies
 *  denials
 *  time since last backup?
-*  
+*  qube types?
+   * audiovm
+   * guivm
+   * video/qva
+   * ???
   
 
 * ? sys-usb - > sys-usb: denied: loopback qrexec connection not supported
