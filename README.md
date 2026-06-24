@@ -1,5 +1,5 @@
 # Selftests
-Things I would watch for in logfiles
+Things I would watch for in logfiles and in testing...
 
 * systemctl status at startup
   * systemctl status qubes-vm@sys-usb.service
@@ -8,6 +8,11 @@ Things I would watch for in logfiles
   * useful msg: add “qubes.skip_autostart” to grub AND  remove rd.qubes_hide_all_usb from grub.
 * other qube startup fail
 * every qube startup fail
+* multiple qubes with same device assignment(s)
+  * and autostart?
+  * are startup failures due to non-availability avoidable? 
+* qubes with assigned PCI devs that are missing.
+* qubes with no strict reset on devices.
 * qrexec timeout
   * has devices?
   * no devices?
