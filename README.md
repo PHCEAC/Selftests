@@ -25,7 +25,7 @@ Things I would watch for in logfiles and in testing...
 *  segfaults
 *  panics
 *  BUGs
-*  
+*  qubes with non-accept firewall rules but upstream netvm has no qvm-firewall daemon running. Drop rules are not implemented. https://forum.qubes-os.org/t/serious-qvm-firewall-bypass-possibly-if-you-do-not-understand-qvm-firewall-and-qubes-firewall-service/39429/22 and rest of that thread.
 
 * shutdown error
 * pool error?
