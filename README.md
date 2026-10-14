@@ -2,10 +2,7 @@
 
 Things I would watch for in logfiles and in testing...
 
-* Setup of sys-usb when Qubes is running on usb-attached storage
-
-
-
+* During setup of sys-usb: test whether Qubes is running on usb-attached storage. seen [ here ](https://forum.qubes-os.org/t/qrexec-daemon-startup-failed-sys-net-fails-to-start-on-fresh-install-of-qubes/19077/10)
 * systemctl status at startup
   * systemctl status qubes-vm@sys-usb.service
   * journalctl -xeu qubes-vm@sys-usb.service
