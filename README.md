@@ -1,5 +1,10 @@
-# Selftests
+# Checks and Selftests
+
 Things I would watch for in logfiles and in testing...
+
+* Setup of sys-usb when Qubes is running on usb-attached storage
+
+
 
 * systemctl status at startup
   * systemctl status qubes-vm@sys-usb.service
@@ -26,7 +31,6 @@ Things I would watch for in logfiles and in testing...
 *  panics
 *  BUGs
 *  qubes with non-accept firewall rules but upstream netvm has no qvm-firewall daemon running. Drop rules are not implemented. https://forum.qubes-os.org/t/serious-qvm-firewall-bypass-possibly-if-you-do-not-understand-qvm-firewall-and-qubes-firewall-service/39429/22 and rest of that thread.
-
 * shutdown error
 * pool error?
 * clockvm error
@@ -41,7 +45,6 @@ Things I would watch for in logfiles and in testing...
 * 
 * secureboot
 * slots on luks? safety one?
-
 *  missing service(s)
 *  ask policies
 *  denials
@@ -54,16 +57,16 @@ Things I would watch for in logfiles and in testing...
 * shutdown-idle service enabled ?
 * other services?
 * 
-
 * ? sys-usb - > sys-usb: denied: loopback qrexec connection not supported
 
 
-* A start job for unit qubes-vm@sys-usb.service has begun execution.
+```A start job for unit qubes-vm@sys-usb.service has begun execution.
 Jun 20 16:57:22 dom0 qvm-start[3868]: Error: * Cannot connect to qrexec agent for 60 seconds, see /var/log/xen/console/guest-sys-usb.log for details
 Jun 20 16:57:22 dom0 systemd[1]: qubes-vm@sys-usb.service: Main process exited, code=exited, status=1/FAILURE
 ░░ An ExecStart= process belonging to unit qubes-vm@sys-usb.service has exited.
 ░░ The process' exit code is 'exited' and its exit status is 1.
 Jun 20 16:57:22 dom0 systemd[1]: qubes-vm@sys-usb.service: Failed with result 'exit-code'.
+```
 
 
 what was:
