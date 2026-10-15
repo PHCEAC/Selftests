@@ -1,11 +1,20 @@
 # Checks and Selftests
 
-General note: Differentiate between:
-1. testing an unknown
+## General note: 
+
+Differentiate between:
+1. testing an unknown (no expectation)
 2. testing with an expected answer
 3. Number 2 where the expected value is dependent on some other parameter (distro? version? etc)
-4.  Test and then enforce the expected value if missing
+4.  Test and then enforce the expected value if different or missing
 5.   Cases where the result of the test is not expected to change over time.
+
+Communicate to user/administrator:
+* especially for unexpected values
+* unexpected changes
+* modified parameters
+
+## Testable items
 
 Things I would watch for in logfiles and in testing...
 
@@ -15,7 +24,7 @@ Things I would watch for in logfiles and in testing...
   * journalctl -xeu qubes-vm@sys-usb.service
 * sys-usb startup fail
   * useful msg: add “qubes.skip_autostart” to grub AND  remove rd.qubes_hide_all_usb from grub.
-* other qube startup fail
+* other autostarting qube startup fail
 * every qube startup fail
 * multiple qubes with same device assignment(s)
   * and autostart?
@@ -23,6 +32,7 @@ Things I would watch for in logfiles and in testing...
 * qubes with assigned PCI devs that are missing.
 * qubes with no strict reset on devices.
 * qrexec timeout
+  * qube is running or contactable?
   * has devices?
   * no devices?
   * recent changes?
