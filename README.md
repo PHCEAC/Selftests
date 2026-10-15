@@ -1,5 +1,12 @@
 # Checks and Selftests
 
+General note: Differentiate between:
+1. testing an unknown
+2. testing with an expected answer
+3. Number 2 where the expected value is dependent on some other parameter (distro? version? etc)
+4.  Test and then enforce the expected value if missing
+5.   Cases where the result of the test is not expected to change over time.
+
 Things I would watch for in logfiles and in testing...
 
 * During setup of sys-usb: test whether Qubes is running on usb-attached storage. seen [ here ](https://forum.qubes-os.org/t/qrexec-daemon-startup-failed-sys-net-fails-to-start-on-fresh-install-of-qubes/19077/10)
